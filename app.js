@@ -101,8 +101,13 @@ app.all("/{*splat}", (req,res,next)=>{
 });
 
 app.use((err, req, res, next) => {
+
     console.error("🔥 ACTUAL ERROR:", err);
+    console.error("🔥 METHOD:", req.method);
+    console.error("🔥 URL:", req.originalUrl);
+
     let { statusCode = 500, message = "something went wrong!" } = err;
+
     res.status(statusCode).render("error.ejs", { message });
 });
 
