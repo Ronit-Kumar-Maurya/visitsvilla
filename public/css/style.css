@@ -129,6 +129,11 @@ body{
     height: 400px;
     width: 100vh;
 }
+@media (max-width: 768px) {
+    #map {
+        height: 300px;
+    }
+}
 
 img {
     max-width: 100%;
