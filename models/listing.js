@@ -35,7 +35,11 @@ const listingSchema = new mongoose.Schema({
         type: [Number],
         required: true
         }
-    }
+    },
+    category: {
+        type : String ,
+        required: true,
+    },
 });
 
 listingSchema.post("findOneAndDelete", async(listing)=>{

@@ -70,16 +70,23 @@ body{
     object-fit: cover !important;
 }
 
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 16rem;
+    }
+}
+
 .card-body {
     padding: 0 !important;
 }
 
-.card-text p{
+.card-text{
     font-weight: 400 !important;
 }
 
 .listing-link{
     text-decoration: none;
+    color: #222222;
 }
 
 /* Card Effect */
@@ -121,4 +128,32 @@ body{
 #map { 
     height: 400px;
     width: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 16rem;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
 }
