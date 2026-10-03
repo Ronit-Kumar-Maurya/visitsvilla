@@ -132,6 +132,7 @@ body{
 @media (max-width: 768px) {
     #map {
         height: 300px;
+        width: 100%;
     }
 }
 
